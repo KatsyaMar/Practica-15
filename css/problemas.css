@@ -1,0 +1,112 @@
+body {
+    background-color: #F1DCC9; /* Fondo claro */
+    color: #000000; /* Texto negro */
+    font-family:'Comfortaa', cursive;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header, footer {
+    color: #FFFFFF; /* Texto blanco */
+    background-color: #000000; /* Fondo negro */
+    font-size: 0.8em;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar título */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    font-size: 1em;
+    width: auto;
+    height: 40px;
+    background-color: #c01853; /* Rosa fuerte */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #F18DA7; /* Rosa pastel */
+    color: #000000; /* Texto negro */
+}
+
+.problema {
+    grid-area: a1;
+    background-color: #F18DA7; /* Rosa pastel */
+    color: #000000; /* Texto negro */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.esquemaProblema {
+    grid-area: a2;
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.imgProblema {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.datos {
+    grid-area: a3;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #c01853; /* Texto rosa fuerte */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulas {
+    grid-area: a4;
+    background-color: #F18DA7; /* Rosa pastel */
+    color: #000000; /* Texto negro */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.calculos {
+    grid-area: a5;
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.resultado {
+    grid-area: a6;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #c01853; /* Texto rosa fuerte */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, [col] 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "a1 a1 a2 a2"
+                         "a3 a3 a4 a4"
+                         "a5 a5 a6 a6";
+    width: 100%;
+    height: 100%;
+}
